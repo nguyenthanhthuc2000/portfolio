@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import ThemeProvider from '@/components/layout/ThemeProviders';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +30,7 @@ export const metadata: Metadata = {
     'HTML5',
     'CSS3',
     'SCSS',
-    'Tailwind',
+    'TailwindCss',
     'Bootstrap',
     'Redux',
     'Nginx',
@@ -67,7 +70,11 @@ export default function RootLayout({
   return (
     <html lang="vi">
       <body>
-        {children}
+        <ThemeProvider>
+          <Header />
+          { children }
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
