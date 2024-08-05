@@ -36,7 +36,6 @@ import LogoMysql from '/public/images/logos/icon-mysql.svg';
 import LogoRiverCrane from '/public/images/logos/logo-rivercrane.png';
 import ProjectIMGUP from '/public/images/logos/project-img-up.png';
 
-
 export const NAV_LINKS = [
   {
     label: 'About',
@@ -240,3 +239,8 @@ export const PROJECTS: ProjectDetails[] = [
     ],
   },
 ];
+
+export const EXTERNAL_LINKS = {
+  GITHUB: 'https://github.com/nguyenthanhthuc2000',
+  GITHUB_REPO: 'https://github.com/nguyenthanhthuc2000/portfolio',
+};
