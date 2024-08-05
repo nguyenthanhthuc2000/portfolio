@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import ThemeSwitcher from '@/components/general/ThemeSwitcher';
+import DownloadCV from '@/components/general/DownloadCV';
 import useWndowSize from '@/hooks/useWndowSize';
 
 const Header = () => {
@@ -9,6 +10,8 @@ const Header = () => {
   return (
     <header>
       <ThemeSwitcher />
+      <br />
+      <DownloadCV />
     </header>
   );
 };
