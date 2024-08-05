@@ -33,7 +33,7 @@ import LogoHTML from '/public/images/logos/icon-html.svg';
 import LogoLaravel from '/public/images/logos/icon-laravel.svg';
 import LogoMariadb from '/public/images/logos/icon-mariadb.svg';
 import LogoMysql from '/public/images/logos/icon-mysql.svg';
-import LogoRiverCrane from '/public/images/logos/logo-rivercrane.svg';
+import LogoRiverCrane from '/public/images/logos/logo-rivercrane.png';
 import ProjectIMGUP from '/public/images/logos/project-img-up.png';
 
 
