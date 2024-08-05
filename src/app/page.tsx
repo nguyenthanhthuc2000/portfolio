@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SkillsSection from '@/components/sections/Skills';
+import SkillsSection from '@/components/sections/SkillsSection';
 
 export default function Home() {
   return (
