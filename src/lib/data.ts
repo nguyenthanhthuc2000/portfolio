@@ -35,6 +35,7 @@ import LogoMariadb from '/public/images/logos/icon-mariadb.svg';
 import LogoMysql from '/public/images/logos/icon-mysql.svg';
 import LogoRiverCrane from '/public/images/logos/logo-rivercrane.png';
 import ProjectIMGUP from '/public/images/logos/project-img-up.png';
+import LogoJquery from '/public/images/logos/icon-jquery.svg';
 
 export const NAV_LINKS = [
   {
@@ -75,6 +76,11 @@ export const SOCIAL_LINKS = [
 ];
 
 export const TECHNOLOGIES: TechDetails[] = [
+  {
+    label: 'jQuery',
+    logo: LogoJquery,
+    url: 'https://jquery.com',
+  },
   {
     label: 'Javascript',
     logo: LogoJavascript,
@@ -136,7 +142,7 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://www.mysql.com/',
   },
   {
-    label: 'HTML',
+    label: 'HTML5',
     logo: LogoHTML,
     url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
   },
