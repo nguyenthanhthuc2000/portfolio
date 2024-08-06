@@ -14,6 +14,7 @@ import LogoJavascript from '/public/images/logos/icon-javascript.svg';
 import LogoTypescript from '/public/images/logos/icon-typescript.svg';
 import LogoReact from '/public/images/logos/icon-react.svg';
 import LogoNextjs from '/public/images/logos/icon-nextjs.svg';
+import LogoNextjsLight from '/public/images/logos/icon-nextjs-light.svg';
 import LogoNodejs from '/public/images/logos/icon-nodejs.svg';
 import LogoExpress from '/public/images/logos/icon-express.svg';
 import LogoExpressLight from '/public/images/logos/icon-express-light.svg';
@@ -36,6 +37,8 @@ import LogoMysql from '/public/images/logos/icon-mysql.svg';
 import LogoRiverCrane from '/public/images/logos/logo-rivercrane.png';
 import ProjectIMGUP from '/public/images/logos/project-img-up.png';
 import LogoJquery from '/public/images/logos/icon-jquery.svg';
+import LogoEC2 from '/public/images/logos/icon-aws-ec2.svg';
+import LogoS3 from '/public/images/logos/icon-aws-s3.svg';
 
 export const NAV_LINKS = [
   {
@@ -77,6 +80,16 @@ export const SOCIAL_LINKS = [
 
 export const TECHNOLOGIES: TechDetails[] = [
   {
+    label: 'HTML5',
+    logo: LogoHTML,
+    url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
+  },
+  {
+    label: 'CSS3',
+    logo: LogoCss3,
+    url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+  },
+  {
     label: 'jQuery',
     logo: LogoJquery,
     url: 'https://jquery.com',
@@ -92,13 +105,14 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://www.typescriptlang.org/',
   },
   {
-    label: 'React',
+    label: 'ReactJS',
     logo: LogoReact,
     url: 'https://react.dev/',
   },
   {
-    label: 'Next.js',
+    label: 'NextJS',
     logo: LogoNextjs,
+    darkModeLogo: LogoNextjsLight,
     url: 'https://nextjs.org/',
   },
   {
@@ -107,19 +121,9 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://sass-lang.com/',
   },
   {
-    label: 'Tailwindcss',
+    label: 'Tailwind CSS',
     logo: LogoTailwindcss,
     url: 'https://tailwindcss.com/',
-  },
-  {
-    label: 'Figma',
-    logo: LogoFigma,
-    url: 'https://www.figma.com/',
-  },
-  {
-    label: 'Git',
-    logo: LogoGit,
-    url: 'https://git-scm.com/',
   },
   {
     label: 'PHP',
@@ -142,19 +146,29 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://www.mysql.com/',
   },
   {
-    label: 'HTML5',
-    logo: LogoHTML,
-    url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
-  },
-  {
-    label: 'CSS3',
-    logo: LogoCss3,
-    url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
-  },
-  {
     label: 'Docker',
     logo: LogoDocker,
     url: 'https://www.docker.com/',
+  },
+  {
+    label: 'Amazon EC2',
+    logo: LogoEC2,
+    url: 'https://aws.amazon.com/',
+  },
+  {
+    label: 'Amazon S3',
+    logo: LogoS3,
+    url: 'https://aws.amazon.com/',
+  },
+  {
+    label: 'Figma',
+    logo: LogoFigma,
+    url: 'https://www.figma.com/',
+  },
+  {
+    label: 'Git',
+    logo: LogoGit,
+    url: 'https://git-scm.com/',
   },
 ];
 
