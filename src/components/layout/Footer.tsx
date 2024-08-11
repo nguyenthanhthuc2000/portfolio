@@ -6,7 +6,7 @@ import Link from 'next/link'
 const Footer = () => {
   return (
     <footer className="w-full bg-gray-50 py-6">
-      <div className="flex items-center justify-center gap-1">
+      <p className="flex items-center justify-center gap-1 text-sm">
         <span className="flex items-center">
           <Copyright className="mr-1 inline-block h-4 w-4" />
           {new Date().getFullYear()} |&nbsp;
@@ -17,9 +17,9 @@ const Footer = () => {
             coded
           </Link>
 
-          &nbsp;with ❤️️ by Nguyễn Thành Thức
+          &nbsp;with ❤️️ by NTT
         </span>
-      </div>
+      </p>
     </footer>
   );
 };

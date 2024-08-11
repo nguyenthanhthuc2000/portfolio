@@ -72,7 +72,9 @@ export default function RootLayout({
       <body>
         <ThemeProvider>
           <Header />
-          { children }
+            <main>
+              { children }
+            </main>
           <Footer />
         </ThemeProvider>
       </body>

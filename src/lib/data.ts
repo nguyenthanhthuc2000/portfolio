@@ -39,6 +39,7 @@ import ProjectIMGUP from '/public/images/logos/project-img-up.png';
 import LogoJquery from '/public/images/logos/icon-jquery.svg';
 import LogoEC2 from '/public/images/logos/icon-aws-ec2.svg';
 import LogoS3 from '/public/images/logos/icon-aws-s3.svg';
+import LogoJava from '/public/images/logos/icon-java.svg';
 
 export const NAV_LINKS = [
   {
@@ -105,17 +106,6 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://www.typescriptlang.org/',
   },
   {
-    label: 'ReactJS',
-    logo: LogoReact,
-    url: 'https://react.dev/',
-  },
-  {
-    label: 'NextJS',
-    logo: LogoNextjs,
-    darkModeLogo: LogoNextjsLight,
-    url: 'https://nextjs.org/',
-  },
-  {
     label: 'Sass/Scss',
     logo: LogoSass,
     url: 'https://sass-lang.com/',
@@ -126,6 +116,37 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://tailwindcss.com/',
   },
   {
+    label: 'Figma',
+    logo: LogoFigma,
+    url: 'https://www.figma.com/',
+  },
+  {
+    label: 'Node.js',
+    logo: LogoNodejs,
+    url: 'https://nodejs.org/',
+  },
+  // {
+  //   label: 'Express.js',
+  //   logo: LogoExpress,
+  //   url: 'https://expressjs.com/',
+  // },
+  {
+    label: 'ReactJS',
+    logo: LogoReact,
+    url: 'https://react.dev/',
+  },
+  {
+    label: 'NextJS',
+    logo: LogoNextjs,
+    darkModeLogo: LogoNextjsLight,
+    url: 'https://nextjs.org/',
+  },
+  // {
+  //   label: 'Java',
+  //   logo: LogoJava,
+  //   url: 'https://www.java.com/',
+  // },
+  {
     label: 'PHP',
     logo: LogoPHP,
     url: 'https://git-scm.com/',
@@ -135,6 +156,11 @@ export const TECHNOLOGIES: TechDetails[] = [
     logo: LogoLaravel,
     url: 'https://git-scm.com/',
   },
+  // {
+  //   label: 'Git',
+  //   logo: LogoGit,
+  //   url: 'https://git-scm.com/',
+  // },
   {
     label: 'MySQL',
     logo: LogoMysql,
@@ -145,31 +171,27 @@ export const TECHNOLOGIES: TechDetails[] = [
     logo: LogoMariadb,
     url: 'https://www.mysql.com/',
   },
+  // {
+  //   label: 'MongoDB',
+  //   logo: LogoMongoDB,
+  //   darkModeLogo: LogoNextjsLight,
+  //   url: 'https://www.mongodb.com/',
+  // },
   {
     label: 'Docker',
     logo: LogoDocker,
     url: 'https://www.docker.com/',
   },
-  {
-    label: 'Amazon EC2',
-    logo: LogoEC2,
-    url: 'https://aws.amazon.com/',
-  },
-  {
-    label: 'Amazon S3',
-    logo: LogoS3,
-    url: 'https://aws.amazon.com/',
-  },
-  {
-    label: 'Figma',
-    logo: LogoFigma,
-    url: 'https://www.figma.com/',
-  },
-  {
-    label: 'Git',
-    logo: LogoGit,
-    url: 'https://git-scm.com/',
-  },
+  // {
+  //   label: 'Amazon EC2',
+  //   logo: LogoEC2,
+  //   url: 'https://aws.amazon.com/',
+  // },
+  // {
+  //   label: 'Amazon S3',
+  //   logo: LogoS3,
+  //   url: 'https://aws.amazon.com/',
+  // },
 ];
 
 export const EXPERIENCES: ExperienceDetails[] = [
