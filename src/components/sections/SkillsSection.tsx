@@ -1,6 +1,6 @@
 import { TECHNOLOGIES } from '@/lib/data';
 import TechDetails from '@/components/Techs';
-import Container from '@/components/layout/container';
+import Container from '@/components/layout/Container';
 
 const SkillsSection = () => {
   return (
