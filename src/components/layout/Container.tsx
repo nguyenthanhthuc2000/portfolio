@@ -4,7 +4,7 @@ import { mergeClasses } from '@/lib/utils';
 
 interface ContainerProps extends React.HTMLAttributes<HTMLElement> {}
 
-const ContainerDiv = React.forwardRef<HTMLElement, ContainerProps>(
+const Container = React.forwardRef<HTMLElement, ContainerProps>(
   ({ className, children, ...props }: ContainerProps, ref) => {
     return (
       <section
@@ -23,4 +23,6 @@ const ContainerDiv = React.forwardRef<HTMLElement, ContainerProps>(
   }
 );
 
-export default ContainerDiv;
+Container.displayName = 'Container';
+
+export default Container;
