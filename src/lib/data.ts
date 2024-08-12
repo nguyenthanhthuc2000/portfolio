@@ -121,7 +121,7 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://www.figma.com/',
   },
   {
-    label: 'Node.js',
+    label: 'NodeJS',
     logo: LogoNodejs,
     url: 'https://nodejs.org/',
   },
