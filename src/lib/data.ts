@@ -141,11 +141,11 @@ export const TECHNOLOGIES: TechDetails[] = [
     darkModeLogo: LogoNextjsLight,
     url: 'https://nextjs.org/',
   },
-  // {
-  //   label: 'Java',
-  //   logo: LogoJava,
-  //   url: 'https://www.java.com/',
-  // },
+  {
+    label: 'Java',
+    logo: LogoJava,
+    url: 'https://www.java.com/',
+  },
   {
     label: 'PHP',
     logo: LogoPHP,
@@ -156,11 +156,11 @@ export const TECHNOLOGIES: TechDetails[] = [
     logo: LogoLaravel,
     url: 'https://git-scm.com/',
   },
-  // {
-  //   label: 'Git',
-  //   logo: LogoGit,
-  //   url: 'https://git-scm.com/',
-  // },
+  {
+    label: 'Git',
+    logo: LogoGit,
+    url: 'https://git-scm.com/',
+  },
   {
     label: 'MySQL',
     logo: LogoMysql,
@@ -182,16 +182,16 @@ export const TECHNOLOGIES: TechDetails[] = [
     logo: LogoDocker,
     url: 'https://www.docker.com/',
   },
-  // {
-  //   label: 'Amazon EC2',
-  //   logo: LogoEC2,
-  //   url: 'https://aws.amazon.com/',
-  // },
-  // {
-  //   label: 'Amazon S3',
-  //   logo: LogoS3,
-  //   url: 'https://aws.amazon.com/',
-  // },
+  {
+    label: 'Amazon EC2',
+    logo: LogoEC2,
+    url: 'https://aws.amazon.com/',
+  },
+  {
+    label: 'Amazon S3',
+    logo: LogoS3,
+    url: 'https://aws.amazon.com/',
+  },
 ];
 
 export const EXPERIENCES: ExperienceDetails[] = [

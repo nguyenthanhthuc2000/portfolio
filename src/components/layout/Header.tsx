@@ -9,9 +9,9 @@ const Header = () => {
   const size = useWndowSize();
   return (
     <header>
-      <ThemeSwitcher />
+      {/* <ThemeSwitcher /> */}
       <br />
-      <DownloadCV />
+      {/* <DownloadCV /> */}
     </header>
   );
 };

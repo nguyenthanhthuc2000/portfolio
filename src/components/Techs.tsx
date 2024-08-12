@@ -6,7 +6,7 @@ import ImageWrapper from '@/components/ui/ImageWrapper';
 
 const Techs = ({ url, logo, darkModeLogo, label }: TechDetails) => {
   return (
-    <div className="flex flex-col items-center gap-2 ">
+    <div className="flex flex-col items-center gap-2" title={label}>
       <Link href={url}>
         <ImageWrapper
           src={logo}
