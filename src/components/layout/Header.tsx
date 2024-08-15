@@ -65,7 +65,7 @@ const Header = () => {
                 </div>
                 <ul className="block px-8 mb-4">
                   {NAV_LINKS.map((link, index) => (
-                    <li key={index} className="mb-4 text-base font-medium text-gray-600 hover:text-gray-950 transition-all active:text-gray-600">
+                    <li key={index} onClick={toggleMenu} className="mb-4 text-base font-medium text-gray-600 hover:text-gray-950 transition-all active:text-gray-600">
                       <NextLink href={link.href}>{link.label}</NextLink>
                     </li>
                   ))}
