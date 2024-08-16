@@ -5,7 +5,7 @@ import {
 
 const DownloadCV = () => {
   const handleDownloadCV = () => {
-    alert('CV is updating :)');
+    alert('CV is updating!');
     return;
     window?.open('/files/Nguyen-Thanh-Thuc-Web-Developer.pdf', '_blank')
   }

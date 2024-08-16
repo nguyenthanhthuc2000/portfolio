@@ -6,7 +6,6 @@ import Footer from '@/components/layout/Footer';
 import ThemeProvider from '@/components/layout/ThemeProviders';
 
 const inter = Inter({ subsets: ["latin"] });
-
 const title = 'Nguyễn Thành Thức | Full Stack Developer From HCMC, Vietnam.';
 const url = 'https://nguyenthanhthuc.info.vn';
 const description = "Developers are like plumbers in the digital world, except they never know how many 'leaks' they'll have to fix the next day!";
@@ -67,6 +66,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="vi">
       <body>

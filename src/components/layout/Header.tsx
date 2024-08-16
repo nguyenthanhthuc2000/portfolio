@@ -1,9 +1,7 @@
 'use client';
-
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import ThemeSwitcher from '@/components/general/ThemeSwitcher';
 import DownloadCV from '@/components/general/DownloadCV';
-import useWndowSize from '@/hooks/useWndowSize';
 import NextLink from 'next/link';
 import { NAV_LINKS } from '@/lib/data';
 import { 
@@ -12,7 +10,6 @@ import {
 } from 'lucide-react';
 
 const Header = () => {
-  const size = useWndowSize();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -20,8 +17,8 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full">
-      <div className="flex w-full max-w-7xl mx-auto items-center justify-between px-4 md:px-8 py-8">
+    <header className="w-full relative">
+      <div className="flex w-full backdrop-blur-sm max-w-7xl mx-auto items-center justify-between px-4 md:px-8 md:py-8 py-4 fixed top-0 left-0 right-0">
 
         <NextLink href="/">
           <Logo />
@@ -37,10 +34,10 @@ const Header = () => {
           </button>
 
           {/* Desktop menu */}
-          <div className="hidden lg:flex lg:relative items-center justify-center gap-10">
+          <div className="hidden lg:flex lg:relative items-center justify-center gap-10 ">
             <ul className="block lg:flex gap-6">
               {NAV_LINKS.map((link, index) => (
-                <li key={index} className="text-base font-medium text-gray-600 hover:text-gray-950 transition-all active:text-gray-600">
+                <li key={index} className="text-base font-medium transition-all">
                   <NextLink href={link.href}>{link.label}</NextLink>
                 </li>
               ))}
@@ -50,35 +47,32 @@ const Header = () => {
               <ThemeSwitcher />
             </div>
           </div>
-
-          {/* Mobile menu */}
-            <> 
-              <div
-                className={`${isMenuOpen ? 'right-0 translate-x-0' : 'translate-x-full -right-full'} fixed w-full bottom-0 top-0 right-0 bg-gray-900/10 cursor-pointer backdrop-blur-sm transition-opacity duration-500`}
-                onClick={toggleMenu}>
-              </div>
-
-              <div className={`${isMenuOpen ? '-right-5 translate-x-0' : 'translate-x-full -right-full'} fixed ring-1 shadow-2xl bg-gray-50 w-96 bottom-0 top-0 transition-all duration-500`} >
-                <div className="flex items-center justify-between mb-4 px-8 pt-6">
-                  <Logo />
-                  <X onClick={toggleMenu} className="cursor-pointer" />
-                </div>
-                <ul className="block px-8 mb-4">
-                  {NAV_LINKS.map((link, index) => (
-                    <li key={index} onClick={toggleMenu} className="mb-4 text-base font-medium text-gray-600 hover:text-gray-950 transition-all active:text-gray-600">
-                      <NextLink href={link.href}>{link.label}</NextLink>
-                    </li>
-                  ))}
-                </ul>
-                <div className="flex items-center gap-4 px-8">
-                  {/* <ThemeSwitcher /> */}
-                  <DownloadCV />
-                </div>
-              </div>
-            </>
-
         </div>
       </div>
+      {/* Mobile menu */}
+      <> 
+        <div
+          className={`${isMenuOpen ? 'right-0 translate-x-0' : 'translate-x-full -right-full'} fixed w-full bottom-0 top-0 right-0 backdrop-blur-sm bg-gray-900/10 cursor-pointer transition-opacity duration-500`}
+          onClick={toggleMenu}>
+        </div>
+        <div className={`${isMenuOpen ? '-right-5 translate-x-0' : 'translate-x-full -right-full'} bg-white dark:bg-gray-950 fixed ring-1 shadow-2xl w-96 bottom-0 top-0 transition-all duration-500`} >
+          <div className="flex items-center justify-between mb-4 px-8 pt-6">
+            <Logo />
+            <X onClick={toggleMenu} className="cursor-pointer" />
+          </div>
+          <ul className="block px-8 mb-4">
+            {NAV_LINKS.map((link, index) => (
+              <li key={index} onClick={toggleMenu} className="mb-4 text-base font-medium transition-all">
+                <NextLink href={link.href}>{link.label}</NextLink>
+              </li>
+            ))}
+          </ul>
+          <div className="flex items-center gap-4 px-8">
+            <ThemeSwitcher />
+            <DownloadCV />
+          </div>
+        </div>
+      </>
     </header>
   );
 };

@@ -16,7 +16,11 @@ const ThemeSwitcher = () => {
   useEffect(() => {
     setMounted(true);
   }, []);
-
+  
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', theme === 'dark');
+  }, [theme]);
+  
   if (!mounted) {
     return (
       <button>

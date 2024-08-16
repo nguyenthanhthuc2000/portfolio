@@ -50,18 +50,18 @@ export const NAV_LINKS = [
     label: 'Skills',
     href: '#skills',
   },
-  {
-    label: 'Works',
-    href: '#works',
-  },
-  {
-    label: 'Projects',
-    href: '#projects',
-  },
-  {
-    label: 'Contact',
-    href: '#contact',
-  },
+  // {
+  //   label: 'Works',
+  //   href: '#works',
+  // },
+  // {
+  //   label: 'Projects',
+  //   href: '#projects',
+  // },
+  // {
+  //   label: 'Contact',
+  //   href: '#contact',
+  // },
   // {
   //   label: 'Blog',
   //   href: '#blog',
