@@ -13,9 +13,9 @@ export default function Home() {
   
   return (
     <Container>
-      <div className="flex justify-center">
+      <div className="flex gap-10">
         <div>
-          <label htmlFor="phone">Phone</label>
+          <label htmlFor="phone" className="font-bold">Phone</label>
           <PhoneInput value={phoneNumber} onChange={handlePhoneNumberChange} />
         </div>
       </div>
