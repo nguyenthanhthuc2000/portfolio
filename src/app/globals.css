@@ -30,3 +30,19 @@ main {
   margin-top: 5rem;
   min-height: calc(100vh - 5rem - 52px);
 }
+
+.custom-list {
+  counter-reset: list-counter;
+}
+.custom-list > li {
+  counter-increment: list-counter;
+  list-style: none;
+}
+.custom-list > li::before {
+  content: counters(list-counter, ".") ". ";
+  color: #f44336; /* Tailwind red-500 color */
+  margin-right: 4px; /* space between number and content */
+}
+.custom-list > li > ol {
+  margin-left: 1rem; /* indentation for nested lists */
+}
