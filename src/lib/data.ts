@@ -44,11 +44,11 @@ import LogoJava from '/public/images/logos/icon-java.svg';
 export const NAV_LINKS = [
   {
     label: 'About',
-    href: '#about',
+    href: '/#about',
   },
   {
     label: 'Skills',
-    href: '#skills',
+    href: '/#skills',
   },
   // {
   //   label: 'Works',
