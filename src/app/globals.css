@@ -47,6 +47,10 @@ main {
   margin-left: 1rem; /* indentation for nested lists */
 }
 
+.custom-width-header {
+  width: calc(100% - 2rem);
+}
+
 @keyframes sf-fly-by-1 {
   from {
     transform: translateZ(-200px);
@@ -97,7 +101,6 @@ main {
   -webkit-perspective: 600px;
   z-index: -1;
 }
-
 .star-field .layer {
   box-shadow: -411px -476px #cccccc, 777px -407px #d4d4d4, -387px -477px #fcfcfc,
     -91px -235px #d4d4d4, 491px -460px #f7f7f7, 892px -128px #f7f7f7,
