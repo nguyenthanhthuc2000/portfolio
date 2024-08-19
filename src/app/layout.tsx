@@ -72,10 +72,17 @@ export default function RootLayout({
       <body>
         <ThemeProvider>
           <Header />
+          <div id="body-background"></div>
+          <div id="body-wapper">
+            <div className="layer"></div>
+            <div className="layer"></div>
+            <div className="layer"></div>
+            <div className="layer"></div>
             <main>
               { children }
             </main>
-          <Footer />
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>

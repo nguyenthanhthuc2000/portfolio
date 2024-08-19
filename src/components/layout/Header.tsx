@@ -55,7 +55,7 @@ const Header = () => {
           className={`${isMenuOpen ? 'right-0 translate-x-0' : 'translate-x-full -right-full'} fixed w-full bottom-0 top-0 right-0 backdrop-blur-sm bg-gray-900/10 cursor-pointer transition-opacity duration-500`}
           onClick={toggleMenu}>
         </div>
-        <div className={`${isMenuOpen ? '-right-5 translate-x-0' : 'translate-x-full -right-full'} bg-white dark:bg-gray-950 fixed ring-1 shadow-2xl w-96 bottom-0 top-0 transition-all duration-500`} >
+        <div className={`${isMenuOpen ? '-right-5 translate-x-0' : 'translate-x-full -right-full'} bg-white dark:backdrop-blur-sm  dark:bg-gray-900/70 fixed ring-1 shadow-2xl w-96 bottom-0 top-0 transition-all duration-500`} >
           <div className="flex items-center justify-between mb-4 px-8 pt-6">
             <Logo />
             <X onClick={toggleMenu} className="cursor-pointer" />
