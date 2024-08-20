@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import ThemeProvider from '@/components/layout/ThemeProviders';
+import CursorEffects from '@/components/ui/CursorEffects';
 
 const inter = Inter({ subsets: ["latin"] });
 const title = 'Nguyễn Thành Thức | Full Stack Developer From HCMC, Vietnam.';
@@ -71,6 +72,7 @@ export default function RootLayout({
     <html lang="vi">
       <body>
         <ThemeProvider>
+          <CursorEffects />
           <Header />
           <div id="body-background"></div>
           <div id="body-wapper">

@@ -32,7 +32,7 @@ const ThemeSwitcher = () => {
     const wapperBody = document.getElementById('body-wapper');
     if (wapperBody) {
       const classes = twMerge(
-        theme === 'dark' && 'star-field  overflow-x-hidden'
+        theme === 'dark' ? 'star-field overflow-x-hidden' : 'w-full overflow-x-hidden'
       );
       wapperBody.className = classes;
     }

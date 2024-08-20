@@ -55,19 +55,19 @@ const Header = () => {
           className={`${isMenuOpen ? 'right-0 translate-x-0' : 'translate-x-full -right-full'} fixed w-full bottom-0 top-0 right-0 z-10 backdrop-blur-sm bg-gray-900/10 cursor-pointer transition-opacity duration-500`}
           onClick={toggleMenu}>
         </div>
-        <div className={`${isMenuOpen ? '-right-5 translate-x-0' : 'translate-x-full -right-full'} bg-white dark:backdrop-blur-sm z-10 dark:bg-gray-900/70 fixed ring-1 shadow-2xl w-96 bottom-0 top-0 transition-all duration-500`} >
-          <div className="flex items-center justify-between mb-4 px-8 pt-6">
+        <div className={`${isMenuOpen ? 'right-0 translate-x-0 px-6' : 'translate-x-full -right-full'} bg-white dark:backdrop-blur-sm z-10 dark:bg-gray-900/70 fixed ring-1 shadow-2xl w-80 bottom-0 top-0 transition-all duration-500`} >
+          <div className="flex items-center justify-between mb-4 pt-6">
             <Logo />
             <X onClick={toggleMenu} className="cursor-pointer" />
           </div>
-          <ul className="block px-8 mb-4">
+          <ul className="block mb-4">
             {NAV_LINKS.map((link, index) => (
               <li key={index} onClick={toggleMenu} className="mb-4 text-base font-medium transition-all">
                 <NextLink href={link.href}>{link.label}</NextLink>
               </li>
             ))}
           </ul>
-          <div className="flex items-center gap-4 px-8">
+          <div className="flex items-center gap-4">
             <ThemeSwitcher />
             <DownloadCV />
           </div>
