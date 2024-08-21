@@ -8,14 +8,15 @@ export type TechDetails = {
 };
 
 export type ExperienceDetails = {
+  companyName: string;
   logo: string | StaticImageData;
   darkModeLogo?: string | StaticImageData;
   logoAlt: string;
   position: string;
   currentlyWorkHere?: boolean;
-  startDate: Date;
+  startDate: string;
   endDate?: Date;
-  summary: string[];
+  summarys: string[];
 };
 
 

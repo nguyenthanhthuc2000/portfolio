@@ -200,13 +200,14 @@ export const TECHNOLOGIES: TechDetails[] = [
 
 export const EXPERIENCES: ExperienceDetails[] = [
   {
+    companyName: 'Rivercrane Việt Nam',
     logo: LogoRiverCrane,
     darkModeLogo: LogoRiverCrane,
     logoAlt: 'RiverCrane Logo',
     position: 'FullStack Developer',
-    startDate: new Date(2022, 2),
+    startDate: '02/2022',
     currentlyWorkHere: true,
-    summary: [
+    summarys: [
       'Worked as a full stack developer (JavaScript, PHP, MariaDB and Java).',
       'Brainstormed new ideas & gathered requirements for internal projects.',
       'Designed architecture of different projects (ReactJs, NextJS, NuxtJS and Laravel).',
