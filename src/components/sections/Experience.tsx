@@ -12,9 +12,9 @@ const Experience = () => {
         <p>Here is a quick summary of my most recent experiences.</p>
       </div>
       <div>
-        { EXPERIENCES.map((experience) => {
+        { EXPERIENCES.map((experience, index) => {
             return (
-              <div className="p-5 shadow-md max-w-4xl m-auto rounded-3xl dark:bg-white dark:text-black">
+              <div key={index} className="p-5 shadow-md max-w-4xl m-auto rounded-3xl dark:bg-white dark:text-black">
                 <div className="flex justify-start items-center ">
                   <div className="flex items-center justify-start mb-4 rounded-full bg-black p-1">
                     <div className="p-1">
@@ -32,9 +32,7 @@ const Experience = () => {
                         <span className="px-3">{experience.startDate} - PRESENT</span>
                       </div>
                     </div>
-                   
                   </div>
-                  
                 </div>
                 <div className="flex items-center justify-start gap-4 mb-4">
                   <ImageWrapper 
@@ -46,9 +44,9 @@ const Experience = () => {
                   <h3 className="font-bold text-2xl">{experience.position}</h3>
                 </div>
 
-                { experience.summarys.map((summary) => {
+                { experience.summarys.map((summary, indexSummary) => {
                     return (
-                      <p className="flex gap-2 mb-2 items-center pl-6">
+                      <p key={indexSummary} className="flex gap-2 mb-2 items-center pl-6">
                         <Circle size={16}/>
                         <span>{summary}</span>
                       </p>
