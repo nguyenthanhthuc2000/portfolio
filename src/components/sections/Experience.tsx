@@ -15,7 +15,7 @@ const Experience = () => {
           return (
             <div key={index} className="p-5 shadow-md max-w-4xl w-full m-auto rounded-3xl dark:bg-white dark:text-black">
               <div className="flex justify-between items-center mb-4">
-                <div className="flex items-center p-1 justify-start rounded-full bg-cyan-500 shadow-lg shadow-cyan-500/50">
+                <div className="flex items-center p-1 justify-start rounded-full bg-indigo-600 shadow-lg shadow-indigo-500/50">
                   <div className="p-1">
                     <ImageWrapper 
                       width={25}
