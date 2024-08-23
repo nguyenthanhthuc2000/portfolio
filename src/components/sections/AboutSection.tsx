@@ -9,7 +9,7 @@ const AboutSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 md:gap-16">
         <div className="order-2 md:order-1 col-span-2">
           <h1 className="font-bold text-3xl pb-5 text-center md:text-left">Hi, I am Thuc, a Web Developer.</h1>
-          <p className="text-center md:text-left">{`I'm a fullstack developer (JavaScript, PHP, MySQL) with a focus on creating exceptional digital experiences that are fast, accessible, visually appealing, and responsive. I'm always looking for practical technology to improve my skills and daily life.`}</p>
+          <p className="text-center md:text-left">{`I'm a web developer (JavaScript, PHP, MySQL) with a focus on creating exceptional digital experiences that are fast, accessible, visually appealing, and responsive. I'm always looking for practical technology to improve my skills and daily life.`}</p>
           <br />
           <div className="w-full flex justify-center md:block">
             <DownloadCV />
