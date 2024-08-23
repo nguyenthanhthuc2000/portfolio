@@ -50,22 +50,10 @@ export const NAV_LINKS = [
     label: 'Skills',
     href: '/#skills',
   },
-  // {
-  //   label: 'Works',
-  //   href: '#works',
-  // },
-  // {
-  //   label: 'Projects',
-  //   href: '#projects',
-  // },
-  // {
-  //   label: 'Contact',
-  //   href: '#contact',
-  // },
-  // {
-  //   label: 'Blog',
-  //   href: '#blog',
-  // },
+  {
+    label: 'Contact',
+    href: 'https://www.facebook.com/nguyenthanhthuc.2k',
+  },
 ];
 
 export const SOCIAL_LINKS = [
@@ -204,13 +192,13 @@ export const EXPERIENCES: ExperienceDetails[] = [
     logo: LogoRiverCrane,
     darkModeLogo: LogoRiverCrane,
     logoAlt: 'RiverCrane Logo',
-    position: 'FullStack Developer',
+    position: 'Web Developer',
     startDate: '02/2022',
     currentlyWorkHere: true,
     summarys: [
-      'Worked as a full stack developer (JavaScript, PHP, MariaDB and Java).',
+      'Worked as a web developer (JavaScript, PHP, MYSQL).',
       'Brainstormed new ideas & gathered requirements for internal projects.',
-      'Designed architecture of different projects (ReactJs, NextJS, NuxtJS and Laravel).',
+      'Designed architecture of different projects (ReactJs, NextJS and Laravel).',
       'Worked on projects for Japanese clients.',
     ],
   },
