@@ -13,7 +13,7 @@ const AboutSection = () => {
           <p className="text-center md:text-left">{`Graduated from Cao Thang Technical College in 2022 majoring in Computer Network Administration. I'm a web developer (JavaScript, PHP, MySQL) with a focus on creating exceptional digital experiences that are fast, accessible, visually appealing, and responsive. I'm always looking for practical technology to improve my skills and daily life.`}</p>
           <br />
           <div className="w-full flex justify-center md:block ">
-            <DownloadCV className="z-[-1]" />
+            <DownloadCV className="z-1" />
           </div>
         </div>
         <div className="order-1 md:order-2 col-span-1 mb-3 w-full">

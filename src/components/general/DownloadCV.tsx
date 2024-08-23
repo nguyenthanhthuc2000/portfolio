@@ -7,7 +7,7 @@ type DownloadCVProps = {
   className?: string;
 };
 
-const DownloadCV = ({ className }: DownloadCVProps) => {
+const DownloadCV = ({ className = '' }: DownloadCVProps) => {
   const handleDownloadCV = () => {
     alert('CV is updating!');
     return;

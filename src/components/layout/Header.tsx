@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full relative">
+    <header className="w-full relative z-10">
       <div className="flex w-full backdrop-blur-sm max-w-7xl mx-auto items-center justify-between px-4 custom-width-header md:px-8 md:py-8 py-4 fixed top-0 left-0 right-0">
 
         <NextLink href="/">
