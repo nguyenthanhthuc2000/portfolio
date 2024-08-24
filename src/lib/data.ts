@@ -52,7 +52,7 @@ export const NAV_LINKS = [
   },
   {
     label: 'Contact',
-    href: 'https://www.facebook.com/nguyenthanhthuc.2k',
+    href: 'https://www.linkedin.com/in/nguyen-thanh-thuc/',
   },
 ];
 
