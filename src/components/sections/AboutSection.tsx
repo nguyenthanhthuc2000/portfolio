@@ -18,11 +18,11 @@ const AboutSection = () => {
           </div>
         </div>
         <div className="order-1 md:order-2 col-span-1 mb-3 w-full">
-          <div className="flex justify-center mb-3">
+          <div className="flex justify-center mb-3 h-52 w-52 m-auto rounded-full bg-black bg-opacity-50">
             <ImageWrapper
               src={LogoMe}
               alt="Nguyễn Thành Thức"
-              className="transition-transform duration-300 md:hover:scale-110 rounded-full object-cover h-52 w-52"
+              className="transition-transform duration-300 md:hover:scale-110 rounded-full object-cover w-full h-full"
             />
           </div>
           <div className="flex justify-center items-center gap-2"><UserRoundCheck /><span className="text-lg">2000</span></div> 

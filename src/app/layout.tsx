@@ -72,7 +72,7 @@ export default function RootLayout({
     <html lang="vi">
       <body>
         <ThemeProvider>
-          <CursorEffects />
+          {/* <CursorEffects /> */}
           <Header />
           <div id="body-background"></div>
           <div id="body-wapper">

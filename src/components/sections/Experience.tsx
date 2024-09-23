@@ -16,12 +16,12 @@ const Experience = () => {
             <div key={index} className="bg-white p-2 md:p-5 shadow-2xl max-w-4xl w-full m-auto rounded-3xl dark:bg-slate-950 dark:bg-opacity-50">
               <div className="flex justify-center md:justify-between items-center mb-4">
                 <div className="flex items-center p-1 justify-start rounded-full">
-                  <div className="p-1">
+                  <div className="w-10 h-10 rounded-full bg-black bg-opacity-50">
                     <ImageWrapper 
                       width={40}
                       src={experience.logo}
                       alt={experience.logoAlt}
-                      className="transition-transform duration-300 rounded-full object-cover"
+                      className="transition-transform duration-300 rounded-full object-cover w-full h-full"
                     />
                   </div>
                   <div className="px-3">
