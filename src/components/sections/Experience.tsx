@@ -14,7 +14,7 @@ const Experience = () => {
       { EXPERIENCES.map((experience, index) => {
           return (
             <div key={index} className="bg-white p-2 md:p-5 shadow-2xl max-w-4xl w-full m-auto rounded-3xl dark:bg-slate-950 dark:bg-opacity-50">
-              <div className="flex justify-center md:justify-between items-center mb-4">
+              <div className="flex justify-start md:justify-between items-center mb-4">
                 <div className="flex items-center p-1 justify-start rounded-full">
                   <div className="w-10 h-10 rounded-full bg-black bg-opacity-50">
                     <ImageWrapper 
