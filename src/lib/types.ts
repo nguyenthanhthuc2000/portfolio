@@ -15,7 +15,7 @@ export type ExperienceDetails = {
   position: string;
   currentlyWorkHere?: boolean;
   startDate: string;
-  endDate?: Date;
+  endDate?: string;
   summarys: string[];
 };
 

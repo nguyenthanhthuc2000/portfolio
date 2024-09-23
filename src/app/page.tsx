@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <>
       <AboutSection />
-      <Experience />
       <SkillsSection />
+      <Experience />
     </>
   );
 }

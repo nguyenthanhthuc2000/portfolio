@@ -35,6 +35,8 @@ import LogoLaravel from '/public/images/logos/icon-laravel.svg';
 import LogoMariadb from '/public/images/logos/icon-mariadb.svg';
 import LogoMysql from '/public/images/logos/icon-mysql.svg';
 import LogoRiverCrane from '/public/images/logos/logo-rivercrane.png';
+import LogoRiverCraneDark from '/public/images/logos/logo-rivercrane-dark.png';
+import LogoTHKHoldingsVietnam from '/public/images/logos/THK-Holdings-Vietnam.png';
 import ProjectIMGUP from '/public/images/logos/project-img-up.png';
 import LogoJquery from '/public/images/logos/icon-jquery.svg';
 import LogoEC2 from '/public/images/logos/icon-aws-ec2.svg';
@@ -103,7 +105,7 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://sass-lang.com/',
   },
   {
-    label: 'Tailwind CSS',
+    label: 'Tailwind',
     logo: LogoTailwindcss,
     url: 'https://tailwindcss.com/',
   },
@@ -188,20 +190,33 @@ export const TECHNOLOGIES: TechDetails[] = [
 
 export const EXPERIENCES: ExperienceDetails[] = [
   {
-    companyName: 'Rivercrane Việt Nam',
-    logo: LogoRiverCrane,
+    companyName: 'THK Holdings Vietnam',
+    logo: LogoTHKHoldingsVietnam,
+    darkModeLogo: LogoTHKHoldingsVietnam,
+    logoAlt: 'THK Holdings Vietnam',
+    position: 'Web Developer',
+    startDate: '10/2024',
+    endDate: 'Now',
+    currentlyWorkHere: false,
+    summarys: [
+      'Coming Soon :)',
+    ],
+  },
+  {
+    companyName: 'RiverCrane Vietnam',
+    logo: LogoRiverCraneDark,
     darkModeLogo: LogoRiverCrane,
     logoAlt: 'RiverCrane Logo',
     position: 'Web Developer',
     startDate: '02/2022',
-    currentlyWorkHere: true,
+    endDate: '09/2024',
     summarys: [
       'Worked as a web developer (JavaScript, PHP, MYSQL).',
-      'Brainstormed new ideas & gathered requirements for internal projects.',
+      'Generate new ideas and gather requirements for internal and client projects.',
       'Designed architecture of different projects (ReactJs, NextJS and Laravel).',
       'Worked on projects for Japanese clients.',
     ],
-  },
+  }
 ];
 
 export const PROJECTS: ProjectDetails[] = [

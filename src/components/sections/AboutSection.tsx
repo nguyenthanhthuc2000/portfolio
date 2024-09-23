@@ -1,6 +1,7 @@
 import Container from '@/components/layout/Container';
 import ImageWrapper from '@/components/ui/ImageWrapper';
 import LogoHero from '/public/images/logos/hero.jpg';
+import LogoMe from '/public/images/logos/me.jpg';
 import DownloadCV from '@/components/general/DownloadCV';
 import { UserRoundCheck } from 'lucide-react';
 
@@ -19,10 +20,9 @@ const AboutSection = () => {
         <div className="order-1 md:order-2 col-span-1 mb-3 w-full">
           <div className="flex justify-center mb-3">
             <ImageWrapper
-              width={200}
-              src={LogoHero}
+              src={LogoMe}
               alt="Nguyễn Thành Thức"
-              className="transition-transform duration-300 md:hover:scale-110 rounded-full object-cover"
+              className="transition-transform duration-300 md:hover:scale-110 rounded-full object-cover h-52 w-52"
             />
           </div>
           <div className="flex justify-center items-center gap-2"><UserRoundCheck /><span className="text-lg">2000</span></div> 
