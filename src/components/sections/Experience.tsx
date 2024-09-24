@@ -13,7 +13,7 @@ const Experience = () => {
       </div>
       { EXPERIENCES.map((experience, index) => {
           return (
-            <div key={index} className="bg-white p-2 md:p-5 shadow-2xl max-w-4xl w-full m-auto rounded-3xl dark:bg-slate-950 dark:bg-opacity-50">
+            <div key={index} className="transition-transform duration-500 md:hover:scale-105 bg-white p-2 md:p-5 shadow-lg max-w-4xl w-full m-auto rounded-3xl dark:bg-slate-950 dark:bg-opacity-50">
               <div className="flex justify-start md:justify-between items-center mb-4">
                 <div className="flex items-center p-1 justify-start rounded-full">
                   <div className="w-10 h-10 rounded-full bg-black bg-opacity-50">
@@ -48,6 +48,15 @@ const Experience = () => {
                   )
                 })
               }
+
+              <div className="flex justify-start gap-2 flex-wrap p-4">
+                { experience?.techstack?.map((stack, idx) => {
+                  return (
+                    <span key={idx} className="bg-gray-50 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 dark:bg-transparent dark:text-white">#{stack}</span>
+                    )
+                  })
+                }
+              </div>
             </div>
           )
         })

@@ -216,6 +216,7 @@ export const EXPERIENCES: ExperienceDetails[] = [
       'Designed architecture of different projects (ReactJs, NextJS and Laravel).',
       'Worked on projects for Japanese clients.',
     ],
+    techstack: ['ReactJs', 'Typescript', 'Javascript', 'jQuery', 'PHP', 'Laravel', 'Docker', 'MySQL', 'MariaDB', 'NuxtJs', 'VueJs',],
   }
 ];
 
