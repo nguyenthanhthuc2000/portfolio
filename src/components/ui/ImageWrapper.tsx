@@ -28,7 +28,7 @@ const ImageWrapper = ({
 
   const finalSrc = theme === 'dark' && srcForDarkMode ? srcForDarkMode : src;
 
-  return <Image src={finalSrc!} alt={alt} {...props} />;
+  return <Image src={finalSrc!} alt={alt} {...props} priority />;
 };
 
 export default ImageWrapper;
