@@ -202,6 +202,7 @@ export const EXPERIENCES: ExperienceDetails[] = [
       'Working with JavaScript, PHP, MYSQL, Docker, AWS',
       'Framework/Library: jQuery, FuelPHP',
     ],
+    techstack: ['Javascript', 'jQuery', 'PHP', 'FuelPHP', 'Docker', 'MySQL', 'MariaDB', 'AWS'],
   },
   {
     companyName: 'RiverCrane Vietnam',

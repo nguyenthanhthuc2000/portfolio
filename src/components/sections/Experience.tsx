@@ -8,7 +8,7 @@ const Experience = () => {
   return (
     <Container>
       <div className="text-center">
-        <h2 className="text-center rounded-xl text-2xl font-medium" id="skills">Experience</h2>
+        <h2 className="text-center rounded-xl text-2xl font-medium" id="skills">Professional Experience</h2>
         <p>Here is a quick summary of my most recent experiences.</p>
       </div>
       { EXPERIENCES.map((experience, index) => {
