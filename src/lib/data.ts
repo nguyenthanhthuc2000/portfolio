@@ -199,7 +199,8 @@ export const EXPERIENCES: ExperienceDetails[] = [
     endDate: 'Now',
     currentlyWorkHere: false,
     summarys: [
-      'Coming Soon :)',
+      'Working with JavaScript, PHP, MYSQL, Docker, AWS',
+      'Framework/Library: jQuery, FuelPHP',
     ],
   },
   {
@@ -211,10 +212,11 @@ export const EXPERIENCES: ExperienceDetails[] = [
     startDate: '02/2022',
     endDate: '09/2024',
     summarys: [
-      'Worked as a web developer (JavaScript, PHP, MYSQL).',
+      'Worked with JavaScript, PHP, MYSQL, Docker',
       'Generate new ideas and gather requirements for internal and client projects.',
-      'Designed architecture of different projects (ReactJs, NextJS and Laravel).',
+      'Designed architecture of different projects',
       'Worked on projects for Japanese clients.',
+      'Framework/Library: jQuery, NuxtJs, ReactJs, NextJS, Laravel',
     ],
     techstack: ['NextJs', 'ReactJs', 'Typescript', 'Javascript', 'jQuery', 'PHP', 'Laravel', 'Docker', 'MySQL', 'MariaDB', 'NuxtJs', 'VueJs',],
   }
