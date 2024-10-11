@@ -213,13 +213,13 @@ export const EXPERIENCES: ExperienceDetails[] = [
     startDate: '02/2022',
     endDate: '09/2024',
     summarys: [
-      'Worked with JavaScript, PHP, MYSQL, Docker',
+      'Worked with JavaScript, PHP, MYSQL, Java, Docker',
       'Generate new ideas and gather requirements for internal and client projects.',
       'Designed architecture of different projects',
       'Worked on projects for Japanese clients.',
       'Framework/Library: jQuery, NuxtJs, ReactJs, NextJS, Laravel',
     ],
-    techstack: ['NextJs', 'ReactJs', 'Typescript', 'Javascript', 'jQuery', 'PHP', 'Laravel', 'Docker', 'MySQL', 'MariaDB', 'NuxtJs', 'VueJs',],
+    techstack: ['NextJs', 'ReactJs', 'Typescript', 'Javascript', 'jQuery', 'PHP', 'Laravel', 'Docker', 'MySQL', 'MariaDB', 'NuxtJs', 'VueJs', 'Java', 'C#'],
   }
 ];
 
