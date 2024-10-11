@@ -199,7 +199,7 @@ export const EXPERIENCES: ExperienceDetails[] = [
     endDate: 'Now',
     currentlyWorkHere: false,
     summarys: [
-      'Working with JavaScript, PHP, MYSQL, Docker, AWS',
+      'Working with JavaScript, PHP, MYSQL, Docker',
       'Framework/Library: jQuery, FuelPHP',
     ],
     techstack: ['Javascript', 'jQuery', 'PHP', 'FuelPHP', 'Docker', 'MySQL', 'MariaDB', 'AWS'],
