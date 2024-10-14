@@ -1,3 +1,5 @@
+import withPWA from 'next-pwa';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   async headers() {
@@ -11,8 +13,14 @@ const nextConfig = {
           },
         ],
       },
-    ]
-  }
+    ];
+  },
 };
 
-export default nextConfig;
+// Gọi withPWA với nextConfig
+export default withPWA({
+  dest: 'public', // Đường dẫn chứa service worker và manifest
+  register: true,
+  skipWaiting: true,
+  disable: false, // Cho phép PWA trong môi trường production
+})(nextConfig);
