@@ -1,7 +1,6 @@
 import Container from '@/components/layout/Container';
 import { EXPERIENCES } from '@/lib/data';
 import ImageWrapper from '@/components/ui/ImageWrapper';
-import LogoHero from '/public/images/logos/hero.jpg';
 import { ChevronRight, CalendarClock } from 'lucide-react';
 
 const Experience = () => {
