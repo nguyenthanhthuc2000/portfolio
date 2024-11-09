@@ -42,11 +42,11 @@ const PersonalActivities = () => {
             return (
               <div 
                 key={index}
-                className="transition-transform duration-500 md:hover:scale-105 bg-white p-2 md:p-5 shadow-lg max-w-96 w-full rounded-3xl dark:bg-slate-950 dark:bg-opacity-50">
-                  <div className="w-full min-h-48 bg-black bg-opacity-20 rounded-3xl">
+                className="transition-transform duration-500 md:hover:scale-105 bg-white p-5 shadow-lg max-w-96 w-full rounded-3xl dark:bg-slate-950 dark:bg-opacity-50">
+                  <div className="w-full min-h-48 bg-black bg-opacity-20">
                     <ImageWrapper 
                       src={personalActivity.image}
-                      className="w-full h-48 object-cover rounded-3xl"
+                      className="w-full h-48 object-cover"
                       alt={personalActivity.title}
                     />
                   </div>
