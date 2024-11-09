@@ -8,6 +8,7 @@ import {
   Menu,
   X,
 } from 'lucide-react';
+import LanguageSelector from '@/components/ui/LanguageSelector';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ const Header = () => {
     <header className="w-full relative z-10">
       <div className="flex w-full backdrop-blur-sm max-w-7xl mx-auto items-center justify-between px-4 custom-width-header md:px-8 md:py-8 py-4 fixed top-0 left-0 right-0">
 
-        <NextLink href="/">
+        <NextLink href="#">
           <Logo />
         </NextLink>
 
@@ -42,6 +43,7 @@ const Header = () => {
                 </li>
               ))}
             </ul>
+            <LanguageSelector />
             <div className="h-6 w-0.5 bg-gray-100"></div>
             <div className="flex items-center justify-center gap-4">
               <ThemeSwitcher />
@@ -67,9 +69,12 @@ const Header = () => {
               </li>
             ))}
           </ul>
+          <div className="py-3">
+            <LanguageSelector />
+          </div>
           <div className="flex items-center gap-4">
             <ThemeSwitcher />
-            <DownloadCV />
+            <DownloadCV label='Download CV' />
           </div>
         </div>
       </>

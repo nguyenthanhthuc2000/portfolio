@@ -28,3 +28,9 @@ export type ProjectDetails = {
   previewImage: string | StaticImageData;
   technologies: string[];
 };
+
+export interface PageProps {
+  params: { 
+    lang: 'en' | 'vi' | 'ja';
+  }
+}

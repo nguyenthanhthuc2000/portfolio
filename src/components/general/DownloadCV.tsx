@@ -5,9 +5,10 @@ import {
 
 type DownloadCVProps = {
   className?: string;
+  label: string;
 };
 
-const DownloadCV = ({ className = '' }: DownloadCVProps) => {
+const DownloadCV = ({ className = '', label }: DownloadCVProps) => {
   const handleDownloadCV = () => {
     alert('CV is updating!');
     return;
@@ -20,7 +21,7 @@ const DownloadCV = ({ className = '' }: DownloadCVProps) => {
         <span className="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-10 group-hover:translate-x-0"></span>
         <span className="relative flex items-center text-sm gap-3">
           <ArrowDownToLine size="18"/>
-          <span>Download CV</span>
+          <span>{label}</span>
         </span>
       </button>
     </>

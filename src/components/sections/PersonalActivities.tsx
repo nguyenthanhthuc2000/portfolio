@@ -3,6 +3,8 @@ import ImageWrapper from '@/components/ui/ImageWrapper';
 import YoutubeMe from '/public/images/logos/youtube_me.png';
 import See from '/public/images/logos/see.jpg';
 import { StaticImageData } from 'next/image';
+import { PageProps } from '@/lib/types';
+import { getDictionary } from '@/dictionaries';
 
 
 interface PersonalActivity {
@@ -27,14 +29,21 @@ const personalActivitiesData: PersonalActivity[] = [
   },
 ];
 
-const PersonalActivities = () => {
+interface PersonalActivitiesProps {
+  personal_project: string;
+  personal_project_description: string;
+}
   
+export default async function PersonalActivities({
+  personal_project,
+  personal_project_description,
+}: PersonalActivitiesProps) {
+
   return (
     <Container>
       <div className="text-center">
-        <h2 className="text-center text-2xl font-medium" id="personal_activities">Professional Activities</h2>
-        <p>Projects related to personal growth or hobbies, such as blogging, content creation, or skill development.</p>
-        <p>That help individuals build their own online presence or expertise.</p>
+        <h2 className="text-center text-2xl font-medium" id="personal_activities">{personal_project}</h2>
+        <p>{personal_project_description}</p>
       </div>
       <div className="flex flex-wrap justify-center gap-6">
         {
@@ -64,5 +73,3 @@ const PersonalActivities = () => {
     </Container>
   );
 };
-
-export default PersonalActivities;
