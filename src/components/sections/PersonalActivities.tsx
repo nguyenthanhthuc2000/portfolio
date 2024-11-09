@@ -36,29 +36,26 @@ const PersonalActivities = () => {
         <p>Projects related to personal growth or hobbies, such as blogging, content creation, or skill development.</p>
         <p>That help individuals build their own online presence or expertise.</p>
       </div>
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center gap-6">
         {
           personalActivitiesData.map((personalActivity, index) => {
             return (
               <div 
                 key={index}
-                className="max-w-96 md:w-1/2 p-2 w-full transition-transform duration-500 hover:scale-105">
-                <div
-                  className="w-full rounded-2xl overflow-hidden shadow-lg bg-white">
-                  <div className="w-full min-h-48 bg-black bg-opacity-20">
+                className="transition-transform duration-500 md:hover:scale-105 bg-white p-2 md:p-5 shadow-lg max-w-96 w-full rounded-3xl dark:bg-slate-950 dark:bg-opacity-50">
+                  <div className="w-full min-h-48 bg-black bg-opacity-20 rounded-3xl">
                     <ImageWrapper 
                       src={personalActivity.image}
-                      className="w-full h-48 object-cover"
+                      className="w-full h-48 object-cover rounded-3xl"
                       alt={personalActivity.title}
                     />
                   </div>
-                  <div className="px-6 py-4">
-                    <a href={personalActivity.link} target="_blank" className="font-semibold text-xl text-gray-900">{personalActivity.title}</a>
-                    <p className="text-gray-700 text-base mt-2 text-justify">
+                  <div className="py-4">
+                    <a href={personalActivity.link} target="_blank" className="font-semibold text-xl">{personalActivity.title}</a>
+                    <p className="text-base mt-2 text-justify">
                       {personalActivity.description}
                     </p>
                   </div>
-                </div>
               </div>
             )
           })
