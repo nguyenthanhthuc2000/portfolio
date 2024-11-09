@@ -199,10 +199,10 @@ export const EXPERIENCES: ExperienceDetails[] = [
     endDate: 'Now',
     currentlyWorkHere: false,
     summarys: [
-      'Working with JavaScript, PHP, MYSQL, Docker',
-      'Framework/Library: jQuery, FuelPHP',
+      'Working with JavaScript, TypeScript, PHP, MYSQL, Docker',
+      'Framework/Library: jQuery, FuelPHP, ReactJS, Laravel',
     ],
-    techstack: ['Javascript', 'jQuery', 'PHP', 'FuelPHP', 'Docker', 'MySQL', 'MariaDB', 'AWS'],
+    techstack: ['Javascript', 'jQuery', 'PHP', 'ReactJS', 'Laravel', 'TypeScript', 'FuelPHP', 'Docker', 'MySQL', 'MariaDB', 'AWS'],
   },
   {
     companyName: 'RiverCrane Vietnam',
