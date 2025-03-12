@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import ThemeProvider from '@/components/layout/ThemeProviders';
-import CursorEffects from '@/components/ui/CursorEffects';
+import { PageProps } from '@/lib/types';
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 const title = 'Nguyễn Thành Thức | Full Stack Developer From HCMC, Vietnam.';
@@ -63,17 +63,18 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+interface RootLayoutProps extends PageProps {
   children: React.ReactNode;
-}>) {
+}
+
+export default async function RootLayout({
+  children,
+}: RootLayoutProps) {
 
   return (
     <html lang="vi">
       <body>
         <ThemeProvider>
-          {/* <CursorEffects /> */}
           <Header />
           <div id="body-background"></div>
           <div id="body-wapper">

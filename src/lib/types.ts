@@ -29,8 +29,10 @@ export type ProjectDetails = {
   technologies: string[];
 };
 
+export type Language = 'en' | 'vi' | 'ja';
+
 export interface PageProps {
   params: { 
-    lang: 'en' | 'vi' | 'ja';
+    lang: Language;
   }
 }

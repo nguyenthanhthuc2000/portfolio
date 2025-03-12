@@ -4,10 +4,7 @@ import ThemeSwitcher from '@/components/general/ThemeSwitcher';
 import DownloadCV from '@/components/general/DownloadCV';
 import NextLink from 'next/link';
 import { NAV_LINKS } from '@/lib/data';
-import { 
-  Menu,
-  X,
-} from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import LanguageSelector from '@/components/ui/LanguageSelector';
 
 const Header = () => {

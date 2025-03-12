@@ -1,12 +1,7 @@
 import Container from '@/components/layout/Container';
 import ImageWrapper from '@/components/ui/ImageWrapper';
-import LogoHero from '/public/images/logos/hero.jpg';
 import LogoMe from '/public/images/logos/me.jpg';
 import DownloadCV from '@/components/general/DownloadCV';
-import { UserRoundCheck } from 'lucide-react';
-import { getDictionary } from '@/dictionaries';
-import { PageProps } from '@/lib/types';
-
 
 interface AboutSectionProps {
   about_title: string;

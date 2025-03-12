@@ -8,6 +8,7 @@ import {
   TechDetails,
   ExperienceDetails,
   ProjectDetails,
+  Language,
 } from '@/lib/types';
 
 import LogoJavascript from '/public/images/logos/icon-javascript.svg';
@@ -42,6 +43,7 @@ import LogoJquery from '/public/images/logos/icon-jquery.svg';
 import LogoEC2 from '/public/images/logos/icon-aws-ec2.svg';
 import LogoS3 from '/public/images/logos/icon-aws-s3.svg';
 import LogoJava from '/public/images/logos/icon-java.svg';
+import { StaticImageData } from 'next/image';
 
 export const NAV_LINKS = [
   {
@@ -51,6 +53,10 @@ export const NAV_LINKS = [
   {
     label: 'Skills',
     href: '#skills',
+  },
+  {
+    label: 'Git',
+    href: 'https://github.com/nguyenthanhthuc2000',
   },
   {
     label: 'Contact',
@@ -223,11 +229,34 @@ export const EXPERIENCES: ExperienceDetails[] = [
   }
 ];
 
-export const PROJECTS: ProjectDetails[] = [
+interface ProjectTranslation {
+  name: string;
+  description: string;
+}
+
+interface ProjectInfo {
+  translations: Record<Language, ProjectTranslation>;
+  url: string;
+  previewImage: StaticImageData;
+  technologies: string[];
+}
+
+export const PROJECTS: ProjectInfo[] = [
   {
-    name: 'WePro',
-    description:
-      'Internal project to manage employee information, work, projects,...',
+    translations: {
+      [Language.EN]: {
+        name: 'WePro',
+        description: 'Internal project to manage employee information, work, projects,...',
+      },
+      [Language.VI]: {
+        name: 'WePro',
+        description: 'Dự án nội bộ để quản lý thông tin nhân viên, công việc, dự án,...',
+      },
+      [Language.JA]: {
+        name: 'WePro',
+        description: '従業員情報、作業、プロジェクトを管理するための内部プロジェクト',
+      },
+    },
     url: '',
     previewImage: LogoRiverCrane,
     technologies: [
@@ -240,9 +269,20 @@ export const PROJECTS: ProjectDetails[] = [
     ],
   },
   {
-    name: 'IMG-UP',
-    description:
-      'New project with features to automatically create images for products and automatically update to Rakuten site.',
+    translations: {
+      [Language.EN]: {
+        name: 'IMG-UP',
+        description: 'New project with features to automatically create images for products and automatically update to Rakuten site.',
+      },
+      [Language.VI]: {
+        name: 'IMG-UP',
+        description: 'Dự án mới với các tính năng tự động tạo hình ảnh cho sản phẩm và tự động cập nhật lên trang Rakuten.',
+      },
+      [Language.JA]: {
+        name: 'IMG-UP',
+        description: '製品の画像を自動的に作成し、楽天サイトに自動的に更新する機能を備えた新しいプロジェクト',
+      },
+    },
     url: 'https://img-up.greenwich.co.jp/',
     previewImage: ProjectIMGUP,
     technologies: [
@@ -259,9 +299,20 @@ export const PROJECTS: ProjectDetails[] = [
     ],
   },
   {
-    name: 'Order Cheese',
-    description:
-      'Pet food order management project.',
+    translations: {
+      [Language.EN]: {
+        name: 'Order Cheese',
+        description: 'Pet food order management project.',
+      },
+      [Language.VI]: {
+        name: 'Order Cheese',
+        description: 'Dự án quản lý đơn hàng thức ăn cho thú cưng.',
+      },
+      [Language.JA]: {
+        name: 'Order Cheese',
+        description: 'ペットフード注文管理プロジェクト',
+      },
+    },
     url: '',
     previewImage: LogoRiverCrane,
     technologies: [
@@ -276,9 +327,20 @@ export const PROJECTS: ProjectDetails[] = [
     ],
   },
   {
-    name: 'Editor',
-    description:
-      'Product management support system on Rakuten e-commerce platform.',
+    translations: {
+      [Language.EN]: {
+        name: 'Editor',
+        description: 'Product management support system on Rakuten e-commerce platform.',
+      },
+      [Language.VI]: {
+        name: 'Editor',
+        description: 'Hệ thống hỗ trợ quản lý sản phẩm trên nền tảng thương mại điện tử Rakuten.',
+      },
+      [Language.JA]: {
+        name: 'Editor',
+        description: '楽天eコマースプラットフォーム上の製品管理支援システム',
+      },
+    },
     url: '',
     previewImage: LogoRiverCrane,
     technologies: [

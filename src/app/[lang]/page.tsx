@@ -20,15 +20,13 @@ export default async function Home(props: HomeProps) {
       />
       <SkillsSection 
         technical_skills={dict.technical_skills}
-        technical_skills_description={dict.technical_skills_description}
       />
       <Experience 
         professional_experience={dict.professional_experience}
-        professional_experience_description={dict.professional_experience_description}
       />
       <PersonalActivities 
         personal_project={dict.personal_project}
-        personal_project_description={dict.personal_project_description}
+        lang={props.params.lang}
       />
     </>
   );

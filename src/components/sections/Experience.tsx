@@ -2,24 +2,19 @@ import Container from '@/components/layout/Container';
 import { EXPERIENCES } from '@/lib/data';
 import ImageWrapper from '@/components/ui/ImageWrapper';
 import { ChevronRight, CalendarClock } from 'lucide-react';
-import { PageProps } from '@/lib/types';
-import { getDictionary } from '@/dictionaries';
 
 interface ExperienceProps {
   professional_experience: string;
-  professional_experience_description: string;
 }
   
 export default async function Experience({
   professional_experience,
-  professional_experience_description,
 }: ExperienceProps) {
 
   return (
     <Container>
       <div className="text-center">
         <h2 className="text-center rounded-xl text-2xl font-medium" id="skills">{professional_experience}</h2>
-        <p>{professional_experience_description}</p>
       </div>
       { EXPERIENCES.map((experience, index) => {
           return (
