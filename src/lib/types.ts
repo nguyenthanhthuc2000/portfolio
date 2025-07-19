@@ -18,6 +18,7 @@ export type ExperienceDetails = {
   endDate?: string;
   summarys: string[];
   techstack?: string[];
+  description?: string[];
 };
 
 

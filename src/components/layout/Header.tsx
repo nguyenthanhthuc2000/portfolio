@@ -5,7 +5,6 @@ import DownloadCV from '@/components/general/DownloadCV';
 import NextLink from 'next/link';
 import { NAV_LINKS } from '@/lib/data';
 import { Menu, X } from 'lucide-react';
-import LanguageSelector from '@/components/ui/LanguageSelector';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,7 +39,6 @@ const Header = () => {
                 </li>
               ))}
             </ul>
-            <LanguageSelector />
             <div className="h-6 w-0.5 bg-gray-100"></div>
             <div className="flex items-center justify-center gap-4">
               <ThemeSwitcher />
@@ -66,9 +64,6 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          <div className="py-3">
-            <LanguageSelector />
-          </div>
           <div className="flex items-center gap-4">
             <ThemeSwitcher />
             <DownloadCV label='Download CV' />

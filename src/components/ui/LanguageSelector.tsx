@@ -32,7 +32,7 @@ const LanguageSelector = () => {
   }, [currentLang, router]);
 
   return (
-    <div>
+    <>
       {
         languages.map(language => {
           return (
@@ -53,7 +53,7 @@ const LanguageSelector = () => {
           )
         })
       }
-    </div>
+    </>
   );
 };
 

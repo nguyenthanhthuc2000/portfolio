@@ -1,5 +1,3 @@
-'use client';
-
 import Container from '@/components/layout/Container';
 import ImageWrapper from '@/components/ui/ImageWrapper';
 import LaravelFilterSort from '/public/images/logos/laravel-filter-sort.png';

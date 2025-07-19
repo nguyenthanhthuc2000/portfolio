@@ -44,6 +44,9 @@ import LogoEC2 from '/public/images/logos/icon-aws-ec2.svg';
 import LogoS3 from '/public/images/logos/icon-aws-s3.svg';
 import LogoJava from '/public/images/logos/icon-java.svg';
 import { StaticImageData } from 'next/image';
+import LogoRefine from '/public/images/logos/logo-refine.svg';
+import LogoGo from '/public/images/logos/logo-go.png';
+import LogoAws from '/public/images/logos/logo-aws.svg';
 
 export const NAV_LINKS = [
   {
@@ -55,7 +58,7 @@ export const NAV_LINKS = [
     href: '#skills',
   },
   {
-    label: 'Git',
+    label: 'Github',
     href: 'https://github.com/nguyenthanhthuc2000',
   },
   {
@@ -86,15 +89,25 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
   },
   {
-    label: 'CSS3',
-    logo: LogoCss3,
-    url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+    label: 'Sass/Scss',
+    logo: LogoSass,
+    url: 'https://sass-lang.com/',
   },
   {
-    label: 'jQuery',
-    logo: LogoJquery,
-    url: 'https://jquery.com',
+    label: 'Tailwind',
+    logo: LogoTailwindcss,
+    url: 'https://tailwindcss.com/',
   },
+  // {
+  //   label: 'CSS3',
+  //   logo: LogoCss3,
+  //   url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+  // },
+  // {
+  //   label: 'jQuery',
+  //   logo: LogoJquery,
+  //   url: 'https://jquery.com',
+  // },
   {
     label: 'Javascript',
     logo: LogoJavascript,
@@ -105,21 +118,11 @@ export const TECHNOLOGIES: TechDetails[] = [
     logo: LogoTypescript,
     url: 'https://www.typescriptlang.org/',
   },
-  {
-    label: 'Sass/Scss',
-    logo: LogoSass,
-    url: 'https://sass-lang.com/',
-  },
-  {
-    label: 'Tailwind',
-    logo: LogoTailwindcss,
-    url: 'https://tailwindcss.com/',
-  },
-  {
-    label: 'Figma',
-    logo: LogoFigma,
-    url: 'https://www.figma.com/',
-  },
+  // {
+  //   label: 'Figma',
+  //   logo: LogoFigma,
+  //   url: 'https://www.figma.com/',
+  // },
   // {
   //   label: 'NodeJS',
   //   logo: LogoNodejs,
@@ -127,6 +130,7 @@ export const TECHNOLOGIES: TechDetails[] = [
   // },
   // {
   //   label: 'Express.js',
+  
   //   logo: LogoExpress,
   //   url: 'https://expressjs.com/',
   // },
@@ -141,11 +145,21 @@ export const TECHNOLOGIES: TechDetails[] = [
     darkModeLogo: LogoNextjsLight,
     url: 'https://nextjs.org/',
   },
-  // {
-  //   label: 'Java',
-  //   logo: LogoJava,
-  //   url: 'https://www.java.com/',
-  // },
+  {
+    label: 'Refine',
+    logo: LogoRefine,
+    url: 'https://refine.dev/',
+  },
+  {
+    label: 'Java',
+    logo: LogoJava,
+    url: 'https://www.java.com/',
+  },
+  {
+    label: 'Go',
+    logo: LogoGo,
+    url: 'https://go.dev/',
+  },
   {
     label: 'PHP',
     logo: LogoPHP,
@@ -156,21 +170,21 @@ export const TECHNOLOGIES: TechDetails[] = [
     logo: LogoLaravel,
     url: 'https://git-scm.com/',
   },
-  {
-    label: 'Git',
-    logo: LogoGit,
-    url: 'https://git-scm.com/',
-  },
+  // {
+  //   label: 'Git',
+  //   logo: LogoGit,
+  //   url: 'https://git-scm.com/',
+  // },
   {
     label: 'MySQL',
     logo: LogoMysql,
     url: 'https://www.mysql.com/',
   },
-  {
-    label: 'MariaDB',
-    logo: LogoMariadb,
-    url: 'https://www.mysql.com/',
-  },
+  // {
+  //   label: 'MariaDB',
+  //   logo: LogoMariadb,
+  //   url: 'https://www.mysql.com/',
+  // },
   // {
   //   label: 'MongoDB',
   //   logo: LogoMongoDB,
@@ -183,15 +197,20 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://www.docker.com/',
   },
   // {
-  //   label: 'Amazon EC2',
-  //   logo: LogoEC2,
+  //   label: 'AWS',
+  //   logo: LogoAws,
   //   url: 'https://aws.amazon.com/',
   // },
-  // {
-  //   label: 'Amazon S3',
-  //   logo: LogoS3,
-  //   url: 'https://aws.amazon.com/',
-  // },
+  {
+    label: 'Amazon EC2',
+    logo: LogoEC2,
+    url: 'https://aws.amazon.com/',
+  },
+  {
+    label: 'Amazon S3',
+    logo: LogoS3,
+    url: 'https://aws.amazon.com/',
+  },
 ];
 
 export const EXPERIENCES: ExperienceDetails[] = [
@@ -205,10 +224,16 @@ export const EXPERIENCES: ExperienceDetails[] = [
     endDate: 'Now',
     currentlyWorkHere: false,
     summarys: [
-      'Working with JavaScript, TypeScript, PHP, MYSQL, Docker',
-      'Framework/Library: jQuery, FuelPHP, ReactJS, Laravel',
+      'Language: PHP, Javascript, Typescript, Go, SQL',
+      'Framework & Library: Laravel, ReactJS, Refine',
+      'Database: MySQL, MariaDB',
+      'Cloud Service: AWS EC2, AWS S3',
+      'Other: RESTful API, Docker, CI/CD, API, Version Control',
     ],
-    techstack: ['Javascript', 'jQuery', 'PHP', 'ReactJS', 'Laravel', 'TypeScript', 'FuelPHP', 'Docker', 'MySQL', 'MariaDB', 'AWS'],
+    description: [
+      'Provided technical support to team members, participated in code reviews, and contributed to documentation to ensure consistency and high standards across applications built with Laravel and ReactJS.',
+    ],
+    techstack: ['Javascript', 'jQuery', 'PHP', 'ReactJS', 'Laravel', 'TypeScript', 'FuelPHP', 'Docker', 'MariaDB', 'AWS', 'Go', 'SQL', 'Refine', 'RESTful API', 'CI/CD', 'API', 'Version Control'],
   },
   {
     companyName: 'RiverCrane Vietnam',
@@ -219,13 +244,16 @@ export const EXPERIENCES: ExperienceDetails[] = [
     startDate: '02/2022',
     endDate: '09/2024',
     summarys: [
-      'Worked with JavaScript, PHP, MYSQL, Java, Docker',
-      'Generate new ideas and gather requirements for internal and client projects.',
-      'Designed architecture of different projects',
-      'Worked on projects for Japanese clients.',
-      'Framework/Library: jQuery, NuxtJs, ReactJs, NextJS, Laravel',
+      'Language: JavaScript, Typescript, PHP, SQL, Java',
+      'Framework & Library: jQuery, NuxtJs, ReactJs, NextJS, Laravel',
+      'Database: MySQL, MariaDB, IndexedDB',
+      'Other: RESTful API, Docker, Version Control, Figma',
     ],
-    techstack: ['NextJs', 'ReactJs', 'Typescript', 'Javascript', 'jQuery', 'PHP', 'Laravel', 'Docker', 'MySQL', 'MariaDB', 'NuxtJs', 'VueJs', 'Java', 'C#'],
+    description: [
+      'Proactively participated in requirements analysis and database design, and proposed new features based on user needs and business goals, contributing to improved user experience and system efficiency.',
+      'Successfully migrated large-scale enterprise applications from Adobe Flash Builder to ReactJS, modernizing legacy systems for improved performance, maintainability, and long-term support.',
+    ],
+    techstack: ['NextJs', 'ReactJs', 'Typescript', 'Javascript', 'jQuery', 'PHP', 'Laravel', 'Docker', 'MySQL', 'MariaDB', 'NuxtJs', 'VueJs', 'Java', 'C#', 'RESTful API', 'API', 'Version Control', 'Figma'],
   }
 ];
 
