@@ -47,6 +47,8 @@ import { StaticImageData } from 'next/image';
 import LogoRefine from '/public/images/logos/logo-refine.svg';
 import LogoGo from '/public/images/logos/logo-go.png';
 import LogoAws from '/public/images/logos/logo-aws.svg';
+import LogoRefineLight from '/public/images/logos/refine-logo-light.svg';
+import LogoGoLight from '/public/images/logos/logo-go-light.png';
 
 export const NAV_LINKS = [
   {
@@ -148,6 +150,7 @@ export const TECHNOLOGIES: TechDetails[] = [
   {
     label: 'Refine',
     logo: LogoRefine,
+    darkModeLogo: LogoRefineLight,
     url: 'https://refine.dev/',
   },
   {
@@ -158,6 +161,7 @@ export const TECHNOLOGIES: TechDetails[] = [
   {
     label: 'Go',
     logo: LogoGo,
+    darkModeLogo: LogoGoLight,
     url: 'https://go.dev/',
   },
   {
@@ -170,11 +174,6 @@ export const TECHNOLOGIES: TechDetails[] = [
     logo: LogoLaravel,
     url: 'https://git-scm.com/',
   },
-  // {
-  //   label: 'Git',
-  //   logo: LogoGit,
-  //   url: 'https://git-scm.com/',
-  // },
   {
     label: 'MySQL',
     logo: LogoMysql,
@@ -228,10 +227,10 @@ export const EXPERIENCES: ExperienceDetails[] = [
       'Framework & Library: Laravel, ReactJS, Refine',
       'Database: MySQL, MariaDB',
       'Cloud Service: AWS EC2, AWS S3',
-      'Other: RESTful API, Docker, CI/CD, API, Version Control',
+      'Other: RESTful API, Docker, CI/CD, Version Control, Nginx',
     ],
     description: [
-      'Provided technical support to team members, participated in code reviews, and contributed to documentation to ensure consistency and high standards across applications built with Laravel and ReactJS.',
+      'Technical support to team members, participated in code reviews, and contributed to documentation to ensure consistency and high standards across applications built with Laravel and ReactJS.',
     ],
     techstack: ['Javascript', 'jQuery', 'PHP', 'ReactJS', 'Laravel', 'TypeScript', 'FuelPHP', 'Docker', 'MariaDB', 'AWS', 'Go', 'SQL', 'Refine', 'RESTful API', 'CI/CD', 'API', 'Version Control'],
   },
@@ -247,11 +246,11 @@ export const EXPERIENCES: ExperienceDetails[] = [
       'Language: JavaScript, Typescript, PHP, SQL, Java',
       'Framework & Library: jQuery, NuxtJs, ReactJs, NextJS, Laravel',
       'Database: MySQL, MariaDB, IndexedDB',
-      'Other: RESTful API, Docker, Version Control, Figma',
+      'Other: RESTful API, Docker, Version Control, Nginx, Figma',
     ],
     description: [
       'Proactively participated in requirements analysis and database design, and proposed new features based on user needs and business goals, contributing to improved user experience and system efficiency.',
-      'Successfully migrated large-scale enterprise applications from Adobe Flash Builder to ReactJS, modernizing legacy systems for improved performance, maintainability, and long-term support.',
+      'Migrated large-scale enterprise applications from Adobe Flash Builder to ReactJS, modernizing legacy systems for improved performance, maintainability, and long-term support.',
     ],
     techstack: ['NextJs', 'ReactJs', 'Typescript', 'Javascript', 'jQuery', 'PHP', 'Laravel', 'Docker', 'MySQL', 'MariaDB', 'NuxtJs', 'VueJs', 'Java', 'C#', 'RESTful API', 'API', 'Version Control', 'Figma'],
   }
