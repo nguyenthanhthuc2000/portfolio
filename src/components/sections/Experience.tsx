@@ -44,11 +44,16 @@ export default async function Experience({
                   <span className="px-3 text-sm">{experience.startDate} -  {experience.endDate}</span>
                 </div>
               </div>
-              {experience.description && experience.description.map((desc, index) => (
-                <p className="text-justify" key={index}>{desc}</p>
-              ))}
+              <div className="p-1">
+                { experience?.description?.map((desc, idx) => {
+                  return (
+                    <p className="text-justify" key={idx}>{desc}</p>
+                    )
+                  })
+                }
+              </div>
               <br />
-              <p className="text-justify mb-2">Tech Stack:</p>
+              <p className="text-justify mb-2 p-1">Tech Stack:</p>
               { experience.summarys.map((summary, indexSummary) => {
                   return (
                     <p key={indexSummary} className="flex gap-2 mb-2 pl-6">

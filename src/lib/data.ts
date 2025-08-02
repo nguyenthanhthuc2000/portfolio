@@ -224,7 +224,7 @@ export const EXPERIENCES: ExperienceDetails[] = [
     currentlyWorkHere: false,
     summarys: [
       'Language: PHP, Javascript, Typescript, Go, SQL',
-      'Framework & Library: Laravel, ReactJS, Refine',
+      'Framework & Library: Laravel, ReactJS, Refine, jQuery',
       'Database: MySQL, MariaDB',
       'Cloud Service: AWS EC2, AWS S3',
       'Other: RESTful API, Docker, CI/CD, Version Control, Nginx',

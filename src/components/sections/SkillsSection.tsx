@@ -19,7 +19,7 @@ export default async function SkillsSection({
       <div className="text-center">
         <h2 className="text-center rounded-xl text-2xl font-medium" id="skills">{technical_skills}</h2>
       </div>
-      <div className="flex flex-wrap justify-center gap-4 max-w-4xl m-auto">
+      <div className="flex flex-wrap justify-center items-center gap-x-3 gap-y-8 max-w-4xl m-auto">
         {TECHNOLOGIES.map((technology, index) => (
           <TechDetails {...technology} key={index} />
         ))}
